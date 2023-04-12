@@ -37,7 +37,7 @@ resource "aws_rds_cluster" "udacity_cluster" {
   allow_major_version_upgrade     = true
   apply_immediately               = true
   cluster_identifier              = "udacity-db-cluster"
-  availability_zones              = ["us-east-2a", "us-east-2b"]
+  availability_zones              = ["us-east-2a", "us-east-2b", "us-east-2c"]
   db_cluster_parameter_group_name = aws_rds_cluster_parameter_group.cluster_pg.name
   database_name                   = "udacityc2"
   master_username                 = "udacity"
